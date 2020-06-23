@@ -22,7 +22,9 @@ const PokemonList = (props) => {
                     {pokemonList.map(pokemon => (
                         <div>
                             {pokemon.name.english}
+                            {pokemon.type}
                         </div>
+
                     ))}
                 </pre>
             </div>
