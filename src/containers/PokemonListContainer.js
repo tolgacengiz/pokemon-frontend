@@ -10,7 +10,7 @@ const PokemonListContainer = () => {
     useEffect(() => {
         updateFetchStatus('STARTED');
 
-        fetch('https://floating-everglades-74676.herokuapp.com/pokemon')
+        fetch('https://afternoon-springs-80723.herokuapp.com/pokemon')
             .then(response => response.json())
             .then(data => {
                 setPokemonList(data);
