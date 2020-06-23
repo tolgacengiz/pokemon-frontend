@@ -1,0 +1,36 @@
+.app-header {
+}
+
+.app-header ul {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;    
+}
+.app-header a  {
+  background-color: rgb(252, 78, 78);
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em ;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px;
+} 
+
+.app-header a:hover {
+    background-color: #1a06ce;
+  }
+  
+.app-header a:active {
+    box-shadow: none;
+    top: 5px;
+    background-color: #1a06ce;
+  }
+
+.app-header li {
+    list-style: none;
+}
+
+

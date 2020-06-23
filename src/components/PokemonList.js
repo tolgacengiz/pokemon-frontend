@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 
+import './PokemonList.css';
+
 const PokemonList = (props) => {
     const match = useRouteMatch();
 
@@ -21,9 +23,9 @@ const PokemonList = (props) => {
     if (fetchStatus === 'SUCCEED') {
         return (
             <div className="pokemon-list">
-                <pre>
+                <pre className="22">
                     {pokemonList.map(pokemon => (
-                        <div>
+                        <div className="pokemon-list-item">
                             <Link to={`${match.url}/${pokemon.id}`}>
                                 {pokemon.name.english}
                             </Link>
@@ -39,7 +41,7 @@ const PokemonList = (props) => {
         <div className="pokemon-list">
             Sorry, error occurred:
 
-            <pre>
+            <pre className="pokemon-list">
                 {fetchError}
             </pre>
         </div>

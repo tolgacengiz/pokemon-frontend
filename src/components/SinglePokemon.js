@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SinglePokemon.css';
+
 const SinglePokemon = (props) => {
     const {
         fetchStatus,
