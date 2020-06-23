@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
-
+import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 
-
+import PageLayout from './components/PageLayout';
 
 const App = () => {
   return (
     <div className="App">
-      Hello
+      <Router>
+        <PageLayout />
+      </Router>
     </div>
   );
 }
